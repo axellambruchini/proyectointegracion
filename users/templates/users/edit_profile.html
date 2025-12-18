@@ -12,19 +12,19 @@
                     {% csrf_token %}
 
                     <div class="mb-3">
-                    <label class="form-label fw-bold">Nombre de Usuario (Login)</label>
-                    {{ form.username }}
-                    <div class="form-text text-muted">
-                        <small>⚠️ Este es el nombre que usarás para iniciar sesión.</small>
-                    </div>
-                    {% if form.username.errors %}
-                        <div class="text-danger small">{{ form.username.errors }}</div>
-                    {% endif %}
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Nombre</label>
-                    {{ form.first_name }}
-                </div>
+        <label class="form-label fw-bold">Nombre de Usuario (Login)</label>
+        {{ form.username }}
+        <div class="form-text text-muted">
+            <small>⚠️ Este es el nombre que usarás para iniciar sesión.</small>
+        </div>
+        {% if form.username.errors %}
+            <div class="text-danger small">{{ form.username.errors }}</div>
+        {% endif %}
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        {{ form.first_name }}
+    </div>
                     
                     <div class="mb-3">
                         <label class="form-label">Nombre</label>
