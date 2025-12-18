@@ -7,13 +7,13 @@ class CustomUserCreationForm(UserCreationForm):
     
     class Meta:
         model = CustomUser
-        fields = ('username','username', 'email', 'phone') # Añade los campos que quieras
+        fields = ('username', 'email', 'phone') # Añade los campos que quieras
     
 
 class UserUpdateForm(forms.ModelForm):
     class Meta:
         model = CustomUser
-        fields = ['first_name', 'last_name', 'email', 'phone'] # Campos permitidos
+        fields = ['username','first_name', 'last_name', 'email', 'phone'] # Campos permitidos
         
         # Opcional: Para que se vean bonitos con Bootstrap
         widgets = {
